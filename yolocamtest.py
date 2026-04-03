@@ -38,7 +38,7 @@ def resize_to_stride(image, stride_mul, interpolation=cv2.INTER_LINEAR):
 model = YOLO('yolo26n.pt').to('cuda')  # yolov26n.pt는 사전 훈련된 모델 파일입니다.
 
 # 웹캠 설정
-cap = cv2.VideoCapture(1)  # 0번 카메라 사용, 다른 카메라면 번호 변경
+# cap = cv2.VideoCapture(1)  # 0번 카메라 사용, 다른 카메라면 번호 변경
 cap = cv2.VideoCapture("DJI_20251108145841_0106_D.mp4")
 
 if not cap.isOpened():
